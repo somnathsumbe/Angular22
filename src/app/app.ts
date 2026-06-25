@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './header/header';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
-  imports: [RouterOutlet,Header],
+  imports: [RouterOutlet, Header],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected readonly title = signal('angular22App');
